@@ -1,10 +1,11 @@
 * {
-  font-family: "Urbanist", sans-serif;
   padding: none;
   margin: 0;
 }
 
 body {
+  font-family: "Urbanist", sans-serif;
+  -webkit-text-fill-color: rgba(0, 0, 0, 1);
   background-color: #ebe172;
   height: 150rem;
 }
@@ -94,6 +95,7 @@ h4 {
   font-size: 3vw;
   padding-top: 40px;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 hr {
@@ -126,7 +128,6 @@ input {
 }
 
 .flex-container {
-  /* background-color: green; */
   width: 75%;
   display: flex;
   margin: auto;
@@ -262,5 +263,25 @@ input[type="submit"]:hover {
   }
   .newsletter {
     padding-bottom: 10rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-title {
+    padding-top: 1rem;
+    position: sticky;
+  }
+  .cart-icon button {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .newsletter-title {
+    font-size: 2rem;
+  }
+  .newsletter label {
+    font-size: 1rem;
   }
 }
